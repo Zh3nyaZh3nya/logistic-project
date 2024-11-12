@@ -8,7 +8,7 @@ import * as directives from 'vuetify/directives'
 export default defineNuxtPlugin((app) => {
     const vuetify = createVuetify({
         theme: {
-            defaultTheme: 'dark', // Используем темную тему по умолчанию
+            defaultTheme: 'dark',
             themes: {
                 dark: {
                     colors: {
@@ -30,6 +30,7 @@ export default defineNuxtPlugin((app) => {
         },
         components,
         directives,
+        ssr: true,
     })
 
     app.vueApp.use(vuetify)
