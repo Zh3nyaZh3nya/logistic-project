@@ -35,8 +35,9 @@ export default defineNuxtConfig({
       { code: "en", name: "Eng", file: 'locales/en.json' },
     ],
     lazy: true,
-    langDir: '', // Directory for locale files
+    langDir: '',
   },
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true }
+  devtools: { enabled: false },
+  ssr: true,
 })
