@@ -4,12 +4,10 @@
 <template>
   <v-app>
     <Header />
-    <slot />
+    <NuxtPage />
   </v-app>
 </template>
 
 <style lang="scss">
-.header-hide {
-  height: 0 !important;
-}
+
 </style>

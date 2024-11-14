@@ -1,4 +1,8 @@
 {
+  "_comment_0": "ОБЩИЕ ПЕРЕВОДЫ",
+
+  "save_changes": "Save changes",
+
   "_comment_1": "ССЫЛКИ МЕНЮ",
 
   "menu_link_1": "Map",
@@ -7,5 +11,22 @@
   "menu_link_4": "About Project",
   "menu_link_5": "Settings",
 
-  "_comment_2": ""
+  "_comment_2": "НАСТРОЙКИ",
+
+  "settings_menu_1": "Profile",
+  "settings_menu_2": "Map",
+  "settings_menu_3": "Theme",
+  "settings_menu_4": "FAQ",
+
+  "_comment_3": "ПРОФИЛЬ",
+
+  "profile_title": "Your profile",
+  "profile_title_picture": "Avatar profile",
+  "profile_change_picture": "Change avatar",
+  "profile_delete_picture": "Delete avatar",
+  "profile_title_name": "Your name",
+  "profile_title_name_input": "Enter name",
+  "profile_title_email": "Email",
+  "profile_title_description": "Description your profile",
+  "profile_title_description_input": "Enter description"
 }

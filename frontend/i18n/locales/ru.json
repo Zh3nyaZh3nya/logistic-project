@@ -1,4 +1,8 @@
 {
+  "_comment_0": "ОБЩИЕ ПЕРЕВОДЫ",
+
+  "save_changes": "Сохранить изменения",
+
   "_comment_1": "ССЫЛКИ МЕНЮ",
 
   "menu_link_1": "Карта",
@@ -7,5 +11,22 @@
   "menu_link_4": "О Проекте",
   "menu_link_5": "Настройки",
 
-  "_comment_2": ""
+  "_comment_2": "НАСТРОЙКИ",
+
+  "settings_menu_1": "Профиль",
+  "settings_menu_2": "Карта",
+  "settings_menu_3": "Тема",
+  "settings_menu_4": "FAQ",
+
+  "_comment_3": "ПРОФИЛЬ",
+
+  "profile_title": "Ваш профиль",
+  "profile_title_picture": "Аватар профиля",
+  "profile_change_picture": "Поменять аватар",
+  "profile_delete_picture": "Удалить аватар",
+  "profile_title_name": "Ваше имя",
+  "profile_title_name_input": "Введите имя",
+  "profile_title_email": "Email",
+  "profile_title_description": "Описание вашего профиля",
+  "profile_title_description_input": "Введите описание"
 }

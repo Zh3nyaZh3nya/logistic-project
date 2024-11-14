@@ -1,12 +1,8 @@
 <script setup lang="ts">
-const localePath = useLocalePath()
+import { ref } from 'vue'
+import type { IMenu } from "~/types";
 
-interface IMenu {
-  id: number
-  title_lang_key: string
-  icon: string
-  link: string
-}
+const localePath = useLocalePath()
 
 const menu = ref<IMenu[]>([
   {
@@ -37,7 +33,7 @@ const menu = ref<IMenu[]>([
     id: 5,
     title_lang_key: 'menu_link_5',
     icon: 'mdi-cogs',
-    link: '/settings',
+    link: '/settings/profile',
   },
 ])
 </script>
@@ -58,7 +54,7 @@ const menu = ref<IMenu[]>([
             width="100%"
             class="d-flex flex-column align-center pa-3 pa-md-4"
         >
-          <v-icon :icon="item.icon" size="60" class="mb-2" color="secondary"/>
+          <v-icon :icon="item.icon" size="60" class="mb-2" color="accent"/>
           <h1 class="text-body-1 text-md-h5 font-weight-bold text-center">{{ $t(item.title_lang_key) }}</h1>
         </v-card>
 

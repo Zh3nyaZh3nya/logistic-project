@@ -22,7 +22,7 @@ watchEffect(() => {
 const changeLanguage = (lang: LocaleCode) => {
   if (locale.value !== lang) {
     locale.value = lang
-    const path = localePath('/')
+    const path = localePath(route.path)
     router.push(path)
   }
 }
@@ -30,13 +30,11 @@ const changeLanguage = (lang: LocaleCode) => {
 
 <template>
   <header
-      :class="[
-      'header-wrapper header-md-wrapper d-flex justify-end justify-sm-center',
-      { 'header-expanded': headerExpanded }
-    ]"
+      :class="['header-wrapper header-md-wrapper', { 'header-expanded': headerExpanded }]"
+      v-show="!$route.path.includes(localePath('settings'))"
   >
     <v-app-bar class="header position-relative" app :elevation="2">
-      <nuxt-link v-if="!isHome" class="px-4" :to="localePath('/')">
+      <nuxt-link v-show="!isHome" class="px-4" :to="localePath('/')">
         <v-icon icon="mdi-home" size="28" color="secondary"></v-icon>
       </nuxt-link>
 
@@ -62,6 +60,17 @@ const changeLanguage = (lang: LocaleCode) => {
 
 <style lang="scss">
 .header-md-wrapper {
+  position: fixed;
+  z-index: 10000;
+  min-width: 64px;
+
+  @media (min-width: 600px) {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  @media (max-width: 600px) {
+    right: 0;
+  }
   .header {
     border-radius: 0 0 0 16px;
     @media (min-width: 600px) {
@@ -80,6 +89,7 @@ const changeLanguage = (lang: LocaleCode) => {
     }
     .v-toolbar__content > .v-btn:last-child {
       margin-right: 0;
+      margin-left: 0;
     }
   }
   &.header-expanded .header {
