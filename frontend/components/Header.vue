@@ -33,15 +33,15 @@ const changeLanguage = (lang: LocaleCode) => {
       :class="['header-wrapper header-md-wrapper', { 'header-expanded': headerExpanded }]"
       v-show="!$route.path.includes(localePath('settings'))"
   >
-    <v-app-bar class="header position-relative" app :elevation="2">
+    <v-app-bar class="header position-relative" app :elevation="2" :color="$route.path === '/map' ? 'accent' : ''">
       <nuxt-link v-show="!isHome" class="px-4" :to="localePath('/')">
-        <v-icon icon="mdi-home" size="28" color="secondary"></v-icon>
+        <v-icon icon="mdi-home" size="28" :color="$route.path === '/map' ? 'background' : 'accent'"></v-icon>
       </nuxt-link>
 
       <v-menu class="header-menu-lang d-flex justify-center" offset-y>
         <template v-slot:activator="{ props }">
           <v-btn :ripple="false" icon v-bind="props">
-            <v-icon icon="mdi-translate" color="secondary"></v-icon>
+            <v-icon icon="mdi-translate" :color="$route.path === '/map' ? 'background' : 'accent'"></v-icon>
           </v-btn>
         </template>
         <v-list class="py-0">

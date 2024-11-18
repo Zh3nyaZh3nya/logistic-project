@@ -5,7 +5,7 @@ import i18n from '@nuxtjs/i18n'
 export default defineNuxtConfig({
   css: ['~/assets/styles/global.scss', 'vuetify/lib/styles/main.sass'],
   build: {
-    transpile: ['vuetify'],
+    transpile: ['vuetify', 'gsap'],
   },
   modules: [
     '@nuxtjs/i18n',
