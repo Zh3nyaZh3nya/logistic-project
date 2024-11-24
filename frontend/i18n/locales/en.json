@@ -2,6 +2,11 @@
   "_comment_0": "ОБЩИЕ ПЕРЕВОДЫ",
 
   "save_changes": "Save changes",
+  "open": "Open",
+  "zoom": "Zoom",
+  "save": "Save",
+  "changes": "changes",
+  "drop": "Drop",
 
   "_comment_1": "ССЫЛКИ МЕНЮ",
 
@@ -10,6 +15,7 @@
   "menu_link_3": "Members",
   "menu_link_4": "About Project",
   "menu_link_5": "Settings",
+  "menu_link_6": "Orders",
 
   "_comment_2": "НАСТРОЙКИ",
 
@@ -18,7 +24,7 @@
   "settings_menu_3": "Theme",
   "settings_menu_4": "FAQ",
 
-  "_comment_3": "ПРОФИЛЬ",
+  "_comment_3": "НАСТРОЙКИ ПРОФИЛЯ",
 
   "profile_title": "Your profile",
   "profile_title_picture": "Avatar profile",
@@ -28,5 +34,17 @@
   "profile_title_name_input": "Enter name",
   "profile_title_email": "Email",
   "profile_title_description": "Description your profile",
-  "profile_title_description_input": "Enter description"
+  "profile_title_description_input": "Enter description",
+
+  "_comment_4": "НАСТРОЙКИ КАРТЫ",
+
+  "variant_water": "Water",
+  "variant_road": "Roads",
+  "variant_building": "Buildings",
+  "variant_landscape": "Landscape",
+  "variant_land": "Lands",
+  "settings_map_title": "Customize the map for yourself",
+  "settings_map_title_center": "Center of map",
+  "settings_map_title_zoom": "Zoom of map",
+  "settings_map_title_colors": "Colors of map"
 }

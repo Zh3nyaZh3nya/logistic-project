@@ -2,6 +2,13 @@
   "_comment_0": "ОБЩИЕ ПЕРЕВОДЫ",
 
   "save_changes": "Сохранить изменения",
+  "open": "Открыть",
+  "zoom": "Зум",
+  "save": "Сохранить",
+  "changes": "изменения",
+  "drop": "Сбросить",
+  "longitude": "Долгота",
+  "latitude": "Широта",
 
   "_comment_1": "ССЫЛКИ МЕНЮ",
 
@@ -10,6 +17,7 @@
   "menu_link_3": "Сотрудники",
   "menu_link_4": "О Проекте",
   "menu_link_5": "Настройки",
+  "menu_link_6": "Заказы",
 
   "_comment_2": "НАСТРОЙКИ",
 
@@ -18,7 +26,7 @@
   "settings_menu_3": "Тема",
   "settings_menu_4": "FAQ",
 
-  "_comment_3": "ПРОФИЛЬ",
+  "_comment_3": "НАСТРОЙКИ ПРОФИЛЯ",
 
   "profile_title": "Ваш профиль",
   "profile_title_picture": "Аватар профиля",
@@ -28,5 +36,17 @@
   "profile_title_name_input": "Введите имя",
   "profile_title_email": "Email",
   "profile_title_description": "Описание вашего профиля",
-  "profile_title_description_input": "Введите описание"
+  "profile_title_description_input": "Введите описание",
+
+  "_comment_4": "НАСТРОЙКИ КАРТЫ",
+
+  "variant_water": "Вода",
+  "variant_road": "Дороги",
+  "variant_building": "Здания",
+  "variant_landscape": "Ландшафт",
+  "variant_land": "Острова",
+  "settings_map_title": "Настройте карту под себя",
+  "settings_map_title_center": "Центр карты",
+  "settings_map_title_zoom": "Зум карты",
+  "settings_map_title_colors": "Цвета карты"
 }

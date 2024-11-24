@@ -13,10 +13,7 @@ const customization = shallowRef<VectorCustomizationItem[]>(
 );
 const center = settings_map.customCenter ?? settings_map.initialCenter
 const zoom = settings_map.customZoom ?? settings_map.initialZoom
-
-onMounted(() => {
-  console.log(customization.value)
-})
+onMounted(() => console.log(customization.value))
 </script>
 
 <template>

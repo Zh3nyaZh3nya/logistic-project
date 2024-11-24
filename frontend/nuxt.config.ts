@@ -3,6 +3,11 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import i18n from '@nuxtjs/i18n'
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.API_ENDPOINT ?? 'http://127.0.0.1:8000/api'
+    }
+  },
   css: ['~/assets/styles/global.scss', 'vuetify/lib/styles/main.sass'],
   build: {
     transpile: ['vuetify', 'gsap'],

@@ -54,6 +54,13 @@ const rangeRule = (value: number) => {
           />
         </div>
       </v-col>
+
+      <v-col cols="12" class="d-flex align-center justify-space-between">
+        <h2 class="text-h6 font-weight-medium">{{ $t('settings_map_title_colors')}}:</h2>
+        <div class="d-flex ga-4">
+          <ColorPickerWithMap />
+        </div>
+      </v-col>
     </v-row>
   </v-form>
 </template>

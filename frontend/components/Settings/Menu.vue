@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { useLocalePath } from "#i18n";
 import { useDisplay } from 'vuetify'
 import type { IMenu } from "~/types";
 
-const { mdAndUp } = useDisplay()
+const { mdAndUp, smAndUp } = useDisplay()
 const localePath = useLocalePath()
-onMounted(() => {
-  console.log(mdAndUp)
-})
+
 const drawer = ref<boolean>(true)
 const menu = ref<IMenu[]>([
   {
@@ -45,6 +43,7 @@ const menu = ref<IMenu[]>([
           theme="dark"
           permanent
           rail
+          v-if="smAndUp"
       >
         <v-list
             density="compact"
@@ -60,6 +59,8 @@ const menu = ref<IMenu[]>([
           :rail="!mdAndUp"
       >
         <v-list class="py-0">
+          <v-list-item prepend-icon="mdi-home" :to="localePath('/')" base-color="accent" v-if="!smAndUp"></v-list-item>
+
           <v-list-item
               v-for="(item, index) in menu"
               :prepend-icon="item.icon"
