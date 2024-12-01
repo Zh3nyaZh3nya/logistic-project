@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import type { ValidationRule } from "~/types";
 
 const valid = ref<boolean>(false)
 const firstname = ref<string>('')
 const description = ref<string>('')
 const email = ref<string>('')
-
-type ValidationRule = (value: string) => true | string
 
 const nameRules = computed<ValidationRule[]>(() => [
   (value) => {

@@ -9,6 +9,8 @@
   "drop": "Сбросить",
   "longitude": "Долгота",
   "latitude": "Широта",
+  "submit": "Отправить",
+  "confirm": "Подтвердить",
 
   "_comment_1": "ССЫЛКИ МЕНЮ",
 
@@ -48,5 +50,12 @@
   "settings_map_title": "Настройте карту под себя",
   "settings_map_title_center": "Центр карты",
   "settings_map_title_zoom": "Зум карты",
-  "settings_map_title_colors": "Цвета карты"
+  "settings_map_title_colors": "Цвета карты",
+
+  "_comment_5": "ПРАВИЛА ИНПУТОВ",
+
+  "not_empty": "Заполните поле",
+  "rule_is_longitude_1": "Не меньше 10 символов",
+  "rule_is_latitude_1": "Не меньше 10 символов",
+  "rule_is_zoom_1": "Не больше 25"
 }

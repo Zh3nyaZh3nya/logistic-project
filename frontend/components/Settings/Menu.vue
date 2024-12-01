@@ -74,7 +74,7 @@ const menu = ref<IMenu[]>([
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-      <aside class="w-100" style="min-height: 100vh">
+      <aside class="w-100 mx-4 mt-4" style="min-height: 100vh">
         <NuxtPage />
       </aside>
     </v-layout>

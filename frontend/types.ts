@@ -1,3 +1,5 @@
+export type ValidationRule = ((value: any) => string | true)
+
 export interface IMenu {
     id: number
     title_lang_key: string
