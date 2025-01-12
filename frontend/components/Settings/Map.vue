@@ -2,7 +2,7 @@
 import { ref } from "vue"
 import { useSettingsStore } from "~/stores/settings";
 import { useI18n } from "vue-i18n";
-import {useDisplay} from "vuetify";
+import { useDisplay } from "vuetify";
 
 const settings_store = useSettingsStore()
 const { t } = useI18n()

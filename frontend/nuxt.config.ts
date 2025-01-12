@@ -30,7 +30,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  plugins: [],
+  plugins: [{ src: '~/plugins/apexcharts.ts', mode: 'client' }],
   i18n: {
     defaultLocale: "ru",
     locales: [

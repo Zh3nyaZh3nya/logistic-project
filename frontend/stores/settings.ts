@@ -70,7 +70,7 @@ export const useSettingsStore = defineStore({
             customColors: null,
             newCustomization: [],
         },
-    }),
+    } as RootState),
     actions: {
         updateMapSettings(longitude: number | null, latitude: number | null, zoom: number | null): boolean {
             if (zoom !== null || (longitude !== null && latitude !== null)) {

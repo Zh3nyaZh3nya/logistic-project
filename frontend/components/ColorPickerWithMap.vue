@@ -70,7 +70,8 @@ watch([color, selectVariant], ([newColor, newVariant]) => {
               <v-color-picker
                   v-model="color"
                   :modes="['hexa']"
-                  class="rounded-ts-lg"
+                  class="custom-color-picker rounded-ts-lg"
+
               />
               <v-select
                   v-model="selectVariant"
@@ -239,6 +240,11 @@ watch([color, selectVariant], ([newColor, newVariant]) => {
       border-radius: 0 8px 8px 0 !important;
     }
   }
+}
+
+.custom-color-picker {
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 .color-picker-mobile {

@@ -2,3 +2,25 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.bordered-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(var(--v-theme-primary)) !important;
+  table-layout: fixed;
+  td {
+    border-bottom: 1px solid rgb(var(--v-theme-primary)) !important;
+    border-right: 1px solid rgb(var(--v-theme-primary)) !important;
+    padding: 8px;
+  }
+  .v-table.v-table--fixed-header > .v-table__wrapper > table > thead > tr > th {
+    background: rgb(var(--v-theme-surface));
+    box-shadow: none !important;
+  }
+
+  .v-table--fixed-header > .v-table__wrapper > table > thead > tr > th {
+    border-bottom: 1px solid rgb(var(--v-theme-primary)) !important;
+    border-right: 1px solid rgb(var(--v-theme-primary)) !important;
+  }
+}
+

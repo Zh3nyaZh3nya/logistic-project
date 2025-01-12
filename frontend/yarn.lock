@@ -926,7 +926,7 @@
 
 "@nuxtjs/i18n@^9.0.0-rc.2":
   version "9.0.0-rc.2"
-  resolved "https://registry.npmjs.org/@nuxtjs/i18n/-/i18n-9.0.0-rc.2.tgz"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-9.0.0-rc.2.tgz#758b11eb914a8c1660182ff19731e04966fbebf3"
   integrity sha512-OIxPyci9Wvi/Ewhtc/xZ0XTsqqlm0KRQoY0JrwthdaSVKgyFcKRkP70YLpm7JmgcRDkQk/VkcCUFLDJoo3MiZw==
   dependencies:
     "@intlify/h3" "^0.6.0"
@@ -1284,6 +1284,33 @@
   resolved "https://registry.npmjs.org/@sindresorhus/merge-streams/-/merge-streams-2.3.0.tgz"
   integrity sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==
 
+"@svgdotjs/svg.draggable.js@^3.0.4":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@svgdotjs/svg.draggable.js/-/svg.draggable.js-3.0.5.tgz#804fa627cbe850a137350009bd03d2c8423b39a7"
+  integrity sha512-ljL/fB0tAjRfFOJGhXpr7rEx9DJ6D7Pxt3AXvgxjEM17g6wK3Ho9nXhntraOMx8JLZdq4NBMjokeXMvnQzJVYA==
+
+"@svgdotjs/svg.filter.js@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@svgdotjs/svg.filter.js/-/svg.filter.js-3.0.8.tgz#998cb2481a871fa70d7dbaa891c886b335c562d7"
+  integrity sha512-YshF2YDaeRA2StyzAs5nUPrev7npQ38oWD0eTRwnsciSL2KrRPMoUw8BzjIXItb3+dccKGTX3IQOd2NFzmHkog==
+  dependencies:
+    "@svgdotjs/svg.js" "^3.1.1"
+
+"@svgdotjs/svg.js@^3.1.1", "@svgdotjs/svg.js@^3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@svgdotjs/svg.js/-/svg.js-3.2.4.tgz#4716be92a64c66b29921b63f7235fcfb953fb13a"
+  integrity sha512-BjJ/7vWNowlX3Z8O4ywT58DqbNRyYlkk6Yz/D13aB7hGmfQTvGX4Tkgtm/ApYlu9M7lCQi15xUEidqMUmdMYwg==
+
+"@svgdotjs/svg.resize.js@^2.0.2":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@svgdotjs/svg.resize.js/-/svg.resize.js-2.0.5.tgz#732e4cae15d09ad3021adeac63bc9fad0dc7255a"
+  integrity sha512-4heRW4B1QrJeENfi7326lUPYBCevj78FJs8kfeDxn5st0IYPIRXoTtOSYvTzFWgaWWXd3YCDE6ao4fmv91RthA==
+
+"@svgdotjs/svg.select.js@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@svgdotjs/svg.select.js/-/svg.select.js-4.0.2.tgz#80a10409e6c73206218690eac5c9f94f8c8909b5"
+  integrity sha512-5gWdrvoQX3keo03SCmgaBbD+kFftq0F/f2bzCbNnpkkvW6tk4rl4MakORzFuNjvXPWwB4az9GwuvVxQVnjaK2g==
+
 "@trysound/sax@0.2.0":
   version "0.2.0"
   resolved "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
@@ -1608,6 +1635,11 @@
   resolved "https://registry.yarnpkg.com/@yandex/ymaps3-types/-/ymaps3-types-1.0.15214209.tgz#3eac8ed44b9a71d637ccf4e38fb6941e9964c5af"
   integrity sha512-qQgeyT1Al5ZS3zCa+VochP2i9JSqDuLQXiO3lu6fgUXv+3xDWC6thAQzH0et9bW7YbgZZlRW5xaEFZL5+fztrw==
 
+"@yr/monotone-cubic-spline@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@yr/monotone-cubic-spline/-/monotone-cubic-spline-1.0.3.tgz#7272d89f8e4f6fb7a1600c28c378cc18d3b577b9"
+  integrity sha512-FQXkOta0XBSUPHndIKON2Y9JeQz5ZeMqLYZVVK93FliNBFm7LNMIZmY6FrMEB9XPcDbE2bekMbZD6kzDkxwYjA==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz"
@@ -1695,6 +1727,18 @@ anymatch@^3.1.3, anymatch@~3.1.2:
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
+
+apexcharts@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-4.3.0.tgz#eccf28e830ce1b5e018cfc0e99d1c6af0076c9c7"
+  integrity sha512-PfvZQpv91T68hzry9l5zP3Gip7sQvF0nFK91uCBrswIKX7rbIdbVNS4fOks9m9yP3Ppgs6LHgU2M/mjoG4NM0A==
+  dependencies:
+    "@svgdotjs/svg.draggable.js" "^3.0.4"
+    "@svgdotjs/svg.filter.js" "^3.0.8"
+    "@svgdotjs/svg.js" "^3.2.4"
+    "@svgdotjs/svg.resize.js" "^2.0.2"
+    "@svgdotjs/svg.select.js" "^4.0.1"
+    "@yr/monotone-cubic-spline" "^1.0.3"
 
 "aproba@^1.0.3 || ^2.0.0":
   version "2.0.0"
@@ -5309,6 +5353,11 @@ vue-yandex-maps@^2.1.4:
   integrity sha512-W/vJPbBRkSXpGxeDgHBYQmyViq4ct4T4Vih7RM2uhXMJySSHrVMl1yKUDE0qpg2Or4ZD9BiwYOm3HG/JtvcHxg==
   dependencies:
     "@yandex/ymaps3-types" ">=0.0.27"
+
+vue3-apexcharts@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/vue3-apexcharts/-/vue3-apexcharts-1.8.0.tgz#1984648d966aa91bc4dc3e87fa847f5289f7f1cf"
+  integrity sha512-5tSD4mXTBbIJ9ir+58qHE6oNtIe0RNgqIRYMKpcsIaxkKtwUww4JhvPkpUFlmiW4OJbbdklgjleXq1lfcM4gdA==
 
 vue@^3.4, vue@^3.5.12, vue@latest:
   version "3.5.12"

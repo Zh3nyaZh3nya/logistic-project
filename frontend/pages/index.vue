@@ -12,8 +12,8 @@ const menu = ref<IMenu[]>([
   {
     id: 2,
     title_lang_key: "menu_link_2",
-    icon: "mdi-store-outline",
-    link: "/store",
+    icon: "mdi-warehouse",
+    link: "/stores",
   },
   {
     id: 3,
@@ -23,18 +23,12 @@ const menu = ref<IMenu[]>([
   },
   {
     id: 4,
-    title_lang_key: "menu_link_4",
-    icon: "mdi-information-outline",
-    link: "/about",
-  },
-  {
-    id: 5,
     title_lang_key: "menu_link_5",
     icon: "mdi-cogs",
     link: "/settings/profile",
   },
   {
-    id: 6,
+    id: 5,
     title_lang_key: "menu_link_6",
     icon: "mdi-order-bool-descending-variant",
     link: "/orders",

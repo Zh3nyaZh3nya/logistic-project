@@ -11,6 +11,15 @@
   "latitude": "Широта",
   "submit": "Отправить",
   "confirm": "Подтвердить",
+  "back-to-back": "Вернуться назад",
+  "STOCK_PENDING": "ЗАПАС ОЖИДАЕТСЯ",
+  "NOT_AVAILABLE": "НЕДОСТУПНО",
+  "SELL": "ПРОДАН",
+  "SEND": "ОТПРАВЛЕН",
+  "ARRIVED": "ПРИБЫЛ",
+  "store": "Склад",
+  "products": "Товары",
+  "members": "Сотрудники",
 
   "_comment_1": "ССЫЛКИ МЕНЮ",
 
@@ -57,5 +66,25 @@
   "not_empty": "Заполните поле",
   "rule_is_longitude_1": "Не меньше 10 символов",
   "rule_is_latitude_1": "Не меньше 10 символов",
-  "rule_is_zoom_1": "Не больше 25"
+  "rule_is_zoom_1": "Не больше 25",
+
+  "_comment_6": "ТАБЛИЦА ПРОДУКТОВ",
+
+  "photo": "Фото",
+  "title_table_header_product": "Название товара",
+  "short_desc": "Краткое описание",
+  "status": "Статус",
+  "category": "Категория",
+  "price": "Цена/шт",
+  "count": "Текущее кол-во",
+  "sell_count": "Проданное кол-во",
+  "send_count": "Отправленное кол-во",
+  "arrive_count": "Прибывшее кол-во",
+  "time_arrive": "Время прибытия",
+  "time_send": "Время отправки",
+  "no-data": "Нет данных",
+  "title_product_chart_1": "Количество товаров",
+  "title_product_chart_2": "Статусы",
+  "earn_money": "Денег заработано",
+  "money": "Денег на складе"
 }

@@ -40,12 +40,16 @@ onMounted(() => {
           :max-width="menu.length % 2 !== 0 ? index === menu.length - 1 ? 624 : 300 : 300"
           :ripple="false"
           :to="localePath(item.link)"
+          :disabled="item.disabled"
           width="100%"
           class="d-flex flex-column align-center pa-3 pa-md-4"
       >
         <v-icon :icon="item.icon" size="60" class="mb-2" color="accent" />
-        <h1 class="text-body-1 text-md-h5 font-weight-bold text-center">
+        <h1 class="text-body-1 text-md-h5 font-weight-bold text-center" v-if="item.title_lang_key">
           {{ $t(item.title_lang_key) }}
+        </h1>
+        <h1 class="text-body-1 text-md-h5 font-weight-bold text-center" v-else>
+          {{ item.title }}
         </h1>
       </v-card>
     </v-col>
