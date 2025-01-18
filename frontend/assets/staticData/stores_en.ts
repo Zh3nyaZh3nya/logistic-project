@@ -1,5 +1,5 @@
 import { products_en } from "./products_en.ts";
-import type { IStores } from "~/types";
+import type {IProduct, IStores} from "~/types";
 
 const data: IStores[] = [
     {
@@ -8,7 +8,8 @@ const data: IStores[] = [
         "coords": [55.751244, 37.618423],
         "status": "ACTIVE",
         "work_time": "MON-FRI 09:00-18:00",
-        "products": []
+        "products": [],
+        "address": "Abay Avenue, 45"
     },
     {
         "id": 2,
@@ -16,7 +17,8 @@ const data: IStores[] = [
         "coords": [59.93428, 30.335099],
         "status": "DISABLE",
         "work_time": "MON-SAT 10:00-20:00",
-        "products": []
+        "products": [],
+        "address": "Raiymbek Avenue, 120"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@ const data: IStores[] = [
         "coords": [56.838926, 60.605703],
         "status": "ACTIVE",
         "work_time": "MON-SUN 10:00-22:00",
-        "products": []
+        "products": [],
+        "address": "Tole Bi Street, 85"
     },
     {
         "id": 4,
@@ -32,7 +35,8 @@ const data: IStores[] = [
         "coords": [48.707103, 44.516939],
         "status": "ACTIVE",
         "work_time": "MON-FRI 08:00-17:00",
-        "products": []
+        "products": [],
+        "address": "Seifullin Avenue, 33"
     },
     {
         "id": 5,
@@ -40,12 +44,13 @@ const data: IStores[] = [
         "coords": [43.222015, 76.851248],
         "status": "DISABLE",
         "work_time": "MON-SAT 09:00-19:00",
-        "products": []
+        "products": [],
+        "address": "Zhandosov Street, 50"
     }
 ];
 
-data.forEach(warehouse => {
-    warehouse.products = products_en.filter(product => product.store_id === warehouse.id);
+data.forEach((warehouse: IStores): void => {
+    warehouse.products = products_en.filter((product: IProduct): boolean => product.store_id === warehouse.id);
 });
 
 export const stores_en: IStores[] = data;

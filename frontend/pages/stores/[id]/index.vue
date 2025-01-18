@@ -41,6 +41,7 @@ const seriesFirstChart = computed((): number[] | undefined => {
   }
   return undefined;
 });
+
 const seriesSecondChart = computed((): number[] | undefined => {
   if (products.value.length > 0) {
     const counts: Record<string, number> = {};
@@ -70,7 +71,6 @@ onMounted(() => {
       products.value = foundProducts
     }
   }
-  console.log(products.value)
 });
 </script>
 
