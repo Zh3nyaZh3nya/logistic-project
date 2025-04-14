@@ -3,7 +3,7 @@ import { ref } from "vue"
 import { useLocalePath } from "#i18n";
 import { useStore } from "~/stores/store";
 import { useRoute } from "vue-router";
-import type { IProduct, IStores } from "~/types";
+import type { IProduct, IStores, IMember } from "~/types";
 import type { ApexOptions } from "apexcharts";
 
 const { t, locale } = useI18n()
@@ -13,6 +13,7 @@ const route = useRoute()
 
 const storeData = ref<IStores>({coords: [0, 0], id: 0, products: [], status: 'ACTIVE', title: "", work_time: "ПН-ПН 11:11-11:12"})
 const products = ref<IProduct[]>([])
+const members = ref<IMember[]>([])
 const tab = ref<string | null>(null)
 const optionsFirstChart = ref<ApexOptions>({
   labels: [t('count'), t('sell_count'), t('send_count'), t('arrive_count'),]
@@ -70,6 +71,7 @@ onMounted(() => {
     if (foundProducts) {
       products.value = foundProducts
     }
+    members.value = store.GET_MEMBERS_OF_STORE(Number(route.params.id))
   }
 });
 </script>
@@ -130,7 +132,7 @@ onMounted(() => {
           </v-tabs-window-item>
 
           <v-tabs-window-item value="members">
-            Two
+            <TableMembers :table="members" />
           </v-tabs-window-item>
         </v-tabs-window>
       </v-container>

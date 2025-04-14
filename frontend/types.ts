@@ -14,7 +14,7 @@ export enum StoreStatus {
 
 // Common types
 export type Time = `${number}:${number}`;
-export type Weekday = "ПН" | "ВТ" | "СР" | "ЧТ" | "ПТ" | "СБ" | "ВС";
+export type Weekday = "ПН" | "ВТ" | "СР" | "ЧТ" | "ПТ" | "СБ" | "ВС" | "MON" | "TUE" | "WED" | "THU" | "FRI" | "SAT" | "SUN";
 export type DateWork = `${Weekday}-${Weekday} ${Time}-${Time}`;
 export type MonthWithTime = `${string} ~${Time}-${Time}`;
 export type ValidationRule = (value: any) => string | true;
@@ -85,5 +85,5 @@ export interface ITableHeader {
     align: string;
     sortable: boolean;
     key: string;
-    width: string;
+    width?: string;
 }

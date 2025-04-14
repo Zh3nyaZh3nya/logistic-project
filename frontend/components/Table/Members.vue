@@ -1,37 +1,82 @@
 <script setup lang="ts">
-import type { ITableMembers } from "~/types";
+import type { IMember, ITableHeader } from "~/types";
+
+const { t } = useI18n()
 
 interface IProps {
-  table: ITableMembers
+  table: IMember[]
 }
 
 const props = defineProps<IProps>()
+
+const header: ITableHeader[] = [
+  {
+    title: "№",
+    align: "center",
+    sortable: true,
+    key: 'id',
+  },
+  {
+    title: t('photo'),
+    align: "center",
+    sortable: false,
+    key: 'photo'
+  },
+  {
+    title: t('full_name'),
+    align: "center",
+    sortable: false,
+    key: 'full_name'
+  },
+  {
+    title: t('position'),
+    align: "center",
+    sortable: false,
+    key: 'position'
+  },
+  {
+    title: t('holiday'),
+    align: "center",
+    sortable: true,
+    key: 'holiday'
+  },
+  {
+    title: t('salary'),
+    align: "center",
+    sortable: true,
+    key: 'salary'
+  },
+]
 </script>
 
 <template>
-  <v-table>
-    <thead>
-    <tr>
-      <th class="text-left" v-for="(header, index) in table.header.data" :key="header.id">
-        {{ header.title }}
-      </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr
-        v-for="(content, index) in table.content.data"
-        :key="content.id"
+  <v-card class="bordered-table rounded-t-0">
+    <v-data-table
+        :items="table"
+        :fixed-header="true"
+        :headers="header"
+        :hide-default-footer="true"
+        :no-data-text="$t('no-data')"
     >
-      <td>{{ content.id }}</td>
-      <td>{{ content.photo }}</td>
-      <td>{{ content.full_name }}</td>
-      <td>{{ content.position }}</td>
-      <td>{{ content.schedule }}</td>
-      <td>{{ content.holiday }}</td>
-      <td>{{ content.salary }}</td>
-    </tr>
-    </tbody>
-  </v-table>
+      <template v-slot:item.photo="{ item }">
+        <v-img v-if="item.photo" :src="item.photo" :min-width="140" class="my-4" rounded="lg" cover />
+        <v-icon v-else icon="mdi-account-hard-hat-outline"></v-icon>
+      </template>
+      <template v-slot:item.holiday="{ item }">
+        <p v-if="item.holiday">
+          {{ $t('on_holiday') }}
+          <v-icon icon="mdi-palm-tree"></v-icon>
+        </p>
+        <p v-else>
+          {{ $t('on_work') }}
+          <v-icon icon="mdi-briefcase-outline"></v-icon>
+        </p>
+      </template>
+      <template v-slot:item.salary="{ item }">
+        <p>{{ (item.salary).toLocaleString('ru-RU') }} ₸ / {{ $t('in_month') }}</p>
+      </template>
+    </v-data-table>
+  </v-card>
 </template>
 
 <style scoped>

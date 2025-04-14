@@ -31,7 +31,6 @@ async function submitForm(): Promise<void> {
   }
 }
 
-
 function isLongitude(value: string | null): boolean | string {
   if (value === null) {
     if (latitude.value) return t('not_empty');
@@ -49,7 +48,6 @@ function isLatitude(value: string | null): boolean | string {
   if (value.length === 10) return true;
   return t('rule_is_latitude_1');
 }
-
 
 function isZoom(value: string | null): boolean | string {
   if (value === null) return t('not_empty')

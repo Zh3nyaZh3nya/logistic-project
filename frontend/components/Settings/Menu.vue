@@ -21,18 +21,6 @@ const menu = ref<IMenu[]>([
     icon: 'mdi-map',
     link: 'map',
   },
-  {
-    id: 3,
-    title_lang_key: 'settings_menu_3',
-    icon: 'mdi-theme-light-dark',
-    link: 'theme',
-  },
-  {
-    id: 4,
-    title_lang_key: 'settings_menu_4',
-    icon: 'mdi-frequently-asked-questions',
-    link: 'faq',
-  },
 ])
 </script>
 

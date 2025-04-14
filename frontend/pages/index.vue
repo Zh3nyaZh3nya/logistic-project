@@ -16,12 +16,6 @@ const menu = ref<IMenu[]>([
     link: "/stores",
   },
   {
-    id: 3,
-    title_lang_key: "menu_link_3",
-    icon: "mdi-account-group-outline",
-    link: "/members",
-  },
-  {
     id: 4,
     title_lang_key: "menu_link_5",
     icon: "mdi-cogs",

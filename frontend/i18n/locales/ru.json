@@ -86,5 +86,12 @@
   "title_product_chart_1": "Количество товаров",
   "title_product_chart_2": "Статусы",
   "earn_money": "Денег заработано",
-  "money": "Денег на складе"
+  "money": "Денег на складе",
+  "full_name": "ФИО",
+  "position": "Должность",
+  "holiday": "В отпуске",
+  "salary": "Зарплата",
+  "on_holiday": "В отпуске",
+  "on_work": "На работе",
+  "in_month": "в месяц"
 }

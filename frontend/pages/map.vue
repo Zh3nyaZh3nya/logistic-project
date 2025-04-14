@@ -17,11 +17,6 @@ const stores = computed<IStoresOnMap[]>(() => {
 watch(() => locale.value, (newLocale) => {
   store.updateStoresByLocale(newLocale);
 }, { immediate: true });
-
-onMounted(() => {
-
-});
-
 </script>
 
 <template>

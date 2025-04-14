@@ -72,14 +72,16 @@ const trueBounds = ref<LngLatBounds>([
               },
             }"
         >
-          <div class="marker cursor-pointer">
-            <div class="marker-icon">
-              <v-icon icon="mdi-warehouse" size="25"></v-icon>
+          <nuxt-link :to="store.status === 'ACTIVE' ? `/stores/${store.id}` : ''">
+            <div class="marker cursor-pointer">
+              <div class="marker-icon">
+                <v-icon icon="mdi-warehouse" size="25"></v-icon>
+              </div>
+              <div class="marker-text d-flex align-center justify-center">
+                {{ store.title }}
+              </div>
             </div>
-            <div class="marker-text d-flex align-center justify-center">
-              {{ store.title }}
-            </div>
-          </div>
+          </nuxt-link>
         </yandex-map-marker>
         <template #cluster="{ length }">
           <div class="cluster fade-in text-h6 font-weight-medium cursor-pointer">
