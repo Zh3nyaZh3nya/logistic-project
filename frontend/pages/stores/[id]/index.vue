@@ -2,6 +2,7 @@
 import { ref } from "vue"
 import { useLocalePath } from "#i18n";
 import { useStore } from "~/stores/store";
+import { useDisplay } from "vuetify";
 import { useRoute } from "vue-router";
 import type { IProduct, IStores, IMember } from "~/types";
 import type { ApexOptions } from "apexcharts";
@@ -10,6 +11,7 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const store = useStore()
 const route = useRoute()
+const { smAndDown } = useDisplay()
 
 const storeData = ref<IStores>({coords: [0, 0], id: 0, products: [], status: 'ACTIVE', title: "", work_time: "ПН-ПН 11:11-11:12"})
 const products = ref<IProduct[]>([])
@@ -84,9 +86,9 @@ onMounted(() => {
           <v-icon icon="mdi-arrow-left" class="mr-2"></v-icon>
           <span>{{ $t('back-to-back') }}</span>
         </v-btn>
-        <div class="d-flex align-center justify-space-between">
-          <h1 class="mb-4">{{ $t('store')}}: {{ storeData.title }}</h1>
-          <div class="d-flex ga-4">
+        <div class="d-flex flex-wrap align-center justify-space-between mb-4">
+          <h1>{{ $t('store')}}: {{ storeData.title }}</h1>
+          <div class="d-flex flex-wrap ga-0 ga-sm-4 mt-4 mt-sm-0">
             <p class="text-h6">{{ $t('earn_money') }}: {{ storeData.earn_money }}$</p>
             <p class="text-h6">{{ $t('money') }}: {{ storeData.money }}$</p>
           </div>
@@ -109,20 +111,20 @@ onMounted(() => {
             <TableProducts :table="products" class="mb-8" />
 
             <v-row>
-              <v-col cols="12" md="6">
+              <v-col cols="12" lg="6">
                 <Chart
                     :title="$t('title_product_chart_1')"
                     type="pie"
-                    :width="500"
+                    :width="smAndDown ? 350 : 500"
                     :chart-options="optionsFirstChart"
                     :series="seriesFirstChart"
                 />
               </v-col>
-              <v-col cols="12" md="6" class="d-flex justify-end">
+              <v-col cols="12" lg="6" class="d-flex justify-lg-end">
                 <Chart
                     :title="$t('title_product_chart_2')"
                     type="pie"
-                    :width="500"
+                    :width="smAndDown ? 350 : 500"
                     :chart-options="optionsSecondChart"
                     :series="seriesSecondChart"
                 />

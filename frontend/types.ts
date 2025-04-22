@@ -16,7 +16,6 @@ export enum StoreStatus {
 export type Time = `${number}:${number}`;
 export type Weekday = "ПН" | "ВТ" | "СР" | "ЧТ" | "ПТ" | "СБ" | "ВС" | "MON" | "TUE" | "WED" | "THU" | "FRI" | "SAT" | "SUN";
 export type DateWork = `${Weekday}-${Weekday} ${Time}-${Time}`;
-export type MonthWithTime = `${string} ~${Time}-${Time}`;
 export type ValidationRule = (value: any) => string | true;
 
 // Interfaces
@@ -56,8 +55,9 @@ export interface IProduct {
     price: number;
     currency: string;
     status: ProductStatus;
-    time_arrive: MonthWithTime | null;
-    time_send: MonthWithTime | null;
+    time_arrive: string | null;
+    time_send: string | null;
+    current_coords_driver?: [number, number]
 }
 
 export interface IMember {

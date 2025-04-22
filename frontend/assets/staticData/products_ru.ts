@@ -1,5 +1,6 @@
 import { ProductStatus } from "~/types"
 import type { IProduct } from "~/types";
+import { getRandomArrivalTime } from "assets/staticData/getRandomArrivalTime";
 
 export const products_ru: IProduct[] = [
     {
@@ -13,11 +14,12 @@ export const products_ru: IProduct[] = [
         "price": 699,
         "currency": "USD",
         "status": ProductStatus.STOCK_PENDING,
-        "time_arrive": "02.01.2025 ~08:00-10:00",
+        "time_arrive": getRandomArrivalTime(),
         "time_send": null,
         "sell_count": 25,
         "send_count": 0,
-        "arrive_count": 50
+        "arrive_count": 50,
+        "current_coords_driver": [77.143641, 43.928136]
     },
     {
         "id": 2,
@@ -98,11 +100,12 @@ export const products_ru: IProduct[] = [
         "price": 1200,
         "currency": "USD",
         "status": ProductStatus.STOCK_PENDING,
-        "time_arrive": "12.01.2025 ~09:00-11:30",
+        "time_arrive": getRandomArrivalTime(),
         "time_send": null,
         "sell_count": 5,
         "send_count": 0,
-        "arrive_count": 15
+        "arrive_count": 15,
+        "current_coords_driver": [76.310325, 43.760904]
     },
     {
         "id": 7,
@@ -166,11 +169,12 @@ export const products_ru: IProduct[] = [
         "price": 149.99,
         "currency": "USD",
         "status": ProductStatus.STOCK_PENDING,
-        "time_arrive": "14.02.2025 ~09:00-11:30",
+        "time_arrive": getRandomArrivalTime({randomDate: true}),
         "time_send": null,
         "sell_count": 5,
         "send_count": 0,
-        "arrive_count": 20
+        "arrive_count": 20,
+        "current_coords_driver": [78.369574, 42.741904]
     },
     {
         "id": 11,
@@ -251,11 +255,12 @@ export const products_ru: IProduct[] = [
         "price": 24.99,
         "currency": "USD",
         "status": ProductStatus.STOCK_PENDING,
-        "time_arrive": "25.01.2025 ~10:00-12:00",
+        "time_arrive": getRandomArrivalTime(),
         "time_send": null,
         "sell_count": 0,
         "send_count": 0,
-        "arrive_count": 30
+        "arrive_count": 30,
+        "current_coords_driver": [75.757600, 43.319122]
     }
 ]
 

@@ -1,6 +1,4 @@
 {
-  "_comment_0": "ОБЩИЕ ПЕРЕВОДЫ",
-
   "save_changes": "Сохранить изменения",
   "open": "Открыть",
   "zoom": "Зум",
@@ -20,25 +18,21 @@
   "store": "Склад",
   "products": "Товары",
   "members": "Сотрудники",
-
-  "_comment_1": "ССЫЛКИ МЕНЮ",
-
+  "product": "Товар",
+  "arriving_count": "Кол-во товаров",
+  "filters": "Фильтры",
+  "hide_stores": "Скрыть склады",
+  "hide_arriving_cars": "Скрыть доставляющие машины",
   "menu_link_1": "Карта",
   "menu_link_2": "Склад",
   "menu_link_3": "Сотрудники",
   "menu_link_4": "О Проекте",
   "menu_link_5": "Настройки",
   "menu_link_6": "Заказы",
-
-  "_comment_2": "НАСТРОЙКИ",
-
   "settings_menu_1": "Профиль",
   "settings_menu_2": "Карта",
   "settings_menu_3": "Тема",
   "settings_menu_4": "FAQ",
-
-  "_comment_3": "НАСТРОЙКИ ПРОФИЛЯ",
-
   "profile_title": "Ваш профиль",
   "profile_title_picture": "Аватар профиля",
   "profile_change_picture": "Поменять аватар",
@@ -48,9 +42,6 @@
   "profile_title_email": "Email",
   "profile_title_description": "Описание вашего профиля",
   "profile_title_description_input": "Введите описание",
-
-  "_comment_4": "НАСТРОЙКИ КАРТЫ",
-
   "variant_water": "Вода",
   "variant_road": "Дороги",
   "variant_building": "Здания",
@@ -60,16 +51,10 @@
   "settings_map_title_center": "Центр карты",
   "settings_map_title_zoom": "Зум карты",
   "settings_map_title_colors": "Цвета карты",
-
-  "_comment_5": "ПРАВИЛА ИНПУТОВ",
-
   "not_empty": "Заполните поле",
   "rule_is_longitude_1": "Не меньше 10 символов",
   "rule_is_latitude_1": "Не меньше 10 символов",
   "rule_is_zoom_1": "Не больше 25",
-
-  "_comment_6": "ТАБЛИЦА ПРОДУКТОВ",
-
   "photo": "Фото",
   "title_table_header_product": "Название товара",
   "short_desc": "Краткое описание",
@@ -93,5 +78,8 @@
   "salary": "Зарплата",
   "on_holiday": "В отпуске",
   "on_work": "На работе",
-  "in_month": "в месяц"
+  "in_month": "в месяц",
+  "title-orders": "Ваши заказы",
+  "go-to-map": "Перейти к карте",
+  "price-for-all-count": "Цена за все товары",
 }
