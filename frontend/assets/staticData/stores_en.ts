@@ -5,7 +5,7 @@ import type { IProduct, IStores } from "~/types";
 const data: IStores[] = [
     {
         id: 1,
-        title: "Central Logistics Hub",
+        title: "Централизованный склад",
         coords: [76.911446, 43.185511],
         status: StoreStatus.ACTIVE,
         work_time: "MON-FRI 09:00-18:00",
@@ -16,7 +16,7 @@ const data: IStores[] = [
     },
     {
         id: 2,
-        title: "North Station Warehouse",
+        title: "Гете 257/10 - 2 склад",
         coords: [76.969437, 43.329369],
         status: StoreStatus.ACTIVE,
         work_time: "MON-SAT 10:00-20:00",
@@ -27,7 +27,7 @@ const data: IStores[] = [
     },
     {
         id: 3,
-        title: "Downtown Distribution Center",
+        title: "Гете 257/10 - 1 склад",
         coords: [76.968956, 43.329023],
         status: StoreStatus.ACTIVE,
         work_time: "MON-SUN 10:00-22:00",
@@ -38,7 +38,7 @@ const data: IStores[] = [
     },
     {
         id: 4,
-        title: "Eastside Storage Facility",
+        title: "Сейфуллина 33",
         coords: [76.934416, 43.252142],
         status: StoreStatus.ACTIVE,
         work_time: "MON-FRI 08:00-17:00",
@@ -49,7 +49,7 @@ const data: IStores[] = [
     },
     {
         id: 5,
-        title: "West Industrial Depot",
+        title: "Айтеке би 125",
         coords: [76.910359, 43.256095],
         status: StoreStatus.DISABLE,
         work_time: "MON-SAT 09:00-19:00",

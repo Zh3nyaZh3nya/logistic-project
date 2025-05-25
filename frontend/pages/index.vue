@@ -19,7 +19,7 @@ const menu = ref<IMenu[]>([
     id: 4,
     title_lang_key: "menu_link_5",
     icon: "mdi-cogs",
-    link: "/settings/profile",
+    link: "/settings/map",
   },
   {
     id: 5,

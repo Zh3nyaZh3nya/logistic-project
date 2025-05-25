@@ -9,12 +9,12 @@ const localePath = useLocalePath()
 
 const drawer = ref<boolean>(true)
 const menu = ref<IMenu[]>([
-  {
-    id: 1,
-    title_lang_key: 'settings_menu_1',
-    icon: 'mdi-account-circle-outline',
-    link: 'profile',
-  },
+  // {
+  //   id: 1,
+  //   title_lang_key: 'settings_menu_1',
+  //   icon: 'mdi-account-circle-outline',
+  //   link: 'profile',
+  // },
   {
     id: 2,
     title_lang_key: 'settings_menu_2',
